@@ -28,4 +28,4 @@ jobs:
         python -m pip install --upgrade pip
         pip intatll -r requirements.txt
     - name: Test
-      python -u agent.py
+      run: python -u agent.py
