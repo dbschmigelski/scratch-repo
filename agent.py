@@ -15,4 +15,5 @@ with stdio_mcp_client:
 
     # Create an agent with these tools
     agent = Agent(tools=tools)
+    agent("what day is it")
     print("DONE")
