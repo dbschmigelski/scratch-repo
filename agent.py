@@ -4,7 +4,8 @@ from strands.tools.mcp import MCPClient
 
 # Connect to an MCP server using stdio transport
 stdio_mcp_client = MCPClient(lambda: stdio_client(
-    StdioServerParameters(command="uvx", args=["awslabs.aws-documentation-mcp-server@latest"])
+    StdioServerParameters(command="python", args=["stdio_server.py"])
+    # StdioServerParameters(command="uvx", args=["awslabs.aws-documentation-mcp-server@latest"])
 ))
 
 # Create an agent with MCP tools
