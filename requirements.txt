@@ -1,2 +1,3 @@
 strands-agents
 asyncio
+uvx
