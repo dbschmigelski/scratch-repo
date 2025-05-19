@@ -4,7 +4,7 @@ import asyncio
 async def start_server():
   client = stdio_client(StdioServerParameters(command="uvx", args=["awslabs.aws-documentation-mcp-server@latest"]))
 
-  with client:
+  async with client:
     await client.initialize()
     print("INITIALIZED")
 
