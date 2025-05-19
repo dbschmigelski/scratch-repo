@@ -1,4 +1,4 @@
-from mcp import stdio_client, StdioServerParameters
+from mcp import ClientSession, stdio_client, StdioServerParameters
 import asyncio
 
 async def start_server():
