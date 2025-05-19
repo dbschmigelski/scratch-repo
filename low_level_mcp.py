@@ -9,4 +9,4 @@ async def start_server():
     print("INITIALIZED")
 
 if __name__ == "__main__":
-    asyncio.run(start_server)
+    asyncio.run(start_server())
