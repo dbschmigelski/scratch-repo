@@ -7,8 +7,8 @@ async def start_server():
   async with client as (read_stream, write_stream):
     async with ClientSession(read_stream, write_stream) as session:
         await session.initialize()
-        print(await session.list_tools())
         print("INITIALIZED")
+        print(await session.list_tools())
 
 if __name__ == "__main__":
     asyncio.run(start_server())
